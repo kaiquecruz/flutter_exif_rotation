@@ -2,6 +2,7 @@ group 'io.flutter.plugins.flutterexifrotation'
 version '1.0-SNAPSHOT'
 
 buildscript {
+    namespace "io.flutter.plugins.flutterexifrotation"
     ext.kotlin_version = '1.6.10'
     repositories {
         google()
