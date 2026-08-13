@@ -1,18 +1,7 @@
 group 'io.flutter.plugins.flutterexifrotation'
 version '1.0-SNAPSHOT'
 
-buildscript {
-    ext.kotlin_version = '2.2.0'
-    repositories {
-        google()
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.13.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
+def kotlin_version = '2.2.0'
 
 rootProject.allprojects {
     repositories {
@@ -22,7 +11,6 @@ rootProject.allprojects {
 }
 
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 android {
     namespace "io.flutter.plugins.flutterexifrotation"
@@ -31,10 +19,6 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
-    }
-
-    kotlinOptions {
-        jvmTarget = '1.8'
     }
 
     sourceSets {
